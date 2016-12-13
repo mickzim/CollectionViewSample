@@ -25,3 +25,19 @@ class StackCVCell: UICollectionViewCell {
     }
 
 }
+
+
+class StackTVCell: UITableViewCell {
+    @IBOutlet var cellContentView: CellStackView!
+    var model: Model? {
+        didSet {
+            cellContentView.model = model
+        }
+    }
+
+    override func prepareForReuse() {
+        cellContentView.prepareForReuse()
+    }
+    
+
+}

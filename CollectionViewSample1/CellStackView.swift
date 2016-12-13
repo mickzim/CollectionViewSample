@@ -1,11 +1,3 @@
-//
-//  CellStackView.swift
-//  CollectionViewSample1
-//
-//  Created by Zimmermann, Michael on 23.11.16.
-//  Copyright © 2016 mobile.de. All rights reserved.
-//
-
 import UIKit
 
 class CellStackView: UIView {

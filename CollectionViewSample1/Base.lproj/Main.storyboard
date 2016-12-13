@@ -16,7 +16,7 @@
                 <collectionViewController title="Hello World" id="Fm9-Hk-7mk" customClass="ViewController" customModule="CollectionViewSample1" customModuleProvider="target" sceneMemberID="viewController">
                     <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" dataMode="prototypes" id="bsJ-bo-BNF">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMinX="YES" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                         <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="TZC-v2-Nbh" customClass="MyCollectionViewFlowLayout" customModule="CollectionViewSample1" customModuleProvider="target">
                             <size key="itemSize" width="380" height="150"/>
                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
@@ -26,7 +26,7 @@
                         <cells>
                             <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="StackViewCell" id="xof-X8-gQe" userLabel="StackViewCell" customClass="StackCVCell" customModule="CollectionViewSample1" customModuleProvider="target">
                                 <rect key="frame" x="113" y="10" width="375" height="119"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="375" height="119"/>
                                     <autoresizingMask key="autoresizingMask"/>
@@ -69,24 +69,24 @@
                                     <constraint firstAttribute="trailingMargin" secondItem="TW6-Ie-3jh" secondAttribute="trailing" id="Sc4-MH-XPU"/>
                                 </constraints>
                             </collectionViewCell>
-                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConstraintViewCell" id="0Yi-xH-cln" userLabel="ConstraintViewCell" customClass="ConstraintCVCell" customModule="CollectionViewSample1" customModuleProvider="target">
+                            <collectionViewCell opaque="NO" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ConstraintViewCell" id="0Yi-xH-cln" userLabel="ConstraintViewCell" customClass="ConstraintCVCell" customModule="CollectionViewSample1" customModuleProvider="target">
                                 <rect key="frame" x="110" y="299" width="380" height="179"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES"/>
                                 <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
                                     <rect key="frame" x="0.0" y="0.0" width="380" height="179"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R4O-Mp-Xxw" customClass="CellConstraintView" customModule="CollectionViewSample1" customModuleProvider="target">
-                                            <rect key="frame" x="8" y="8" width="364" height="163"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="380" height="179"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         </view>
                                     </subviews>
                                 </view>
                                 <constraints>
-                                    <constraint firstItem="R4O-Mp-Xxw" firstAttribute="leading" secondItem="0Yi-xH-cln" secondAttribute="leadingMargin" id="Nni-gO-8XK"/>
-                                    <constraint firstAttribute="bottomMargin" secondItem="R4O-Mp-Xxw" secondAttribute="bottom" id="Qvd-gw-yot"/>
-                                    <constraint firstItem="R4O-Mp-Xxw" firstAttribute="top" secondItem="0Yi-xH-cln" secondAttribute="topMargin" id="vnw-Ab-CKk"/>
-                                    <constraint firstAttribute="trailingMargin" secondItem="R4O-Mp-Xxw" secondAttribute="trailing" id="y8I-LF-Is8"/>
+                                    <constraint firstAttribute="bottom" secondItem="R4O-Mp-Xxw" secondAttribute="bottom" id="Sks-Rn-HiQ"/>
+                                    <constraint firstAttribute="right" secondItem="R4O-Mp-Xxw" secondAttribute="right" id="hR9-YO-kM6"/>
+                                    <constraint firstAttribute="left" secondItem="R4O-Mp-Xxw" secondAttribute="left" id="t1H-3p-7l7"/>
+                                    <constraint firstAttribute="top" secondItem="R4O-Mp-Xxw" secondAttribute="top" id="zxV-mC-9Ml"/>
                                 </constraints>
                                 <size key="customSize" width="380" height="179"/>
                                 <connections>
@@ -121,6 +121,112 @@
             </objects>
             <point key="canvasLocation" x="2157" y="302"/>
         </scene>
+        <!--Title-->
+        <scene sceneID="nJA-yB-akb">
+            <objects>
+                <viewController id="phu-k8-NTh" customClass="TblViewController" customModule="CollectionViewSample1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="pJw-QE-zIf"/>
+                        <viewControllerLayoutGuide type="bottom" id="55p-AB-pgF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vKa-Em-3vg">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="i7m-zX-ECy">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="StackViewCell" rowHeight="98" id="Mwi-An-wSd" customClass="StackTVCell" customModule="CollectionViewSample1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="98"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="Mwi-An-wSd" id="S3l-EQ-n1m">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="97"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D73-ba-HQq" customClass="CellStackView" customModule="CollectionViewSample1" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="359" height="81.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="D73-ba-HQq" secondAttribute="bottom" id="6pi-jr-xok"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="D73-ba-HQq" secondAttribute="trailing" id="e19-X2-e8i"/>
+                                                <constraint firstItem="D73-ba-HQq" firstAttribute="leading" secondItem="S3l-EQ-n1m" secondAttribute="leadingMargin" id="mAi-tq-bnA"/>
+                                                <constraint firstItem="D73-ba-HQq" firstAttribute="top" secondItem="S3l-EQ-n1m" secondAttribute="topMargin" id="pxP-Ks-4xf"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellContentView" destination="D73-ba-HQq" id="dmG-D2-b5T"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="ConstraintViewCell" rowHeight="111" id="LSt-39-0li" customClass="ConstraintTVCell" customModule="CollectionViewSample1" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="126" width="375" height="111"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="LSt-39-0li" id="QxH-4j-SRl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="110"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jYq-nr-7ay" customClass="CellConstraintView" customModule="CollectionViewSample1" customModuleProvider="target">
+                                                    <rect key="frame" x="8" y="8" width="359" height="129.5"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="jYq-nr-7ay" secondAttribute="trailing" id="WJU-3S-2fo"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="jYq-nr-7ay" secondAttribute="bottom" constant="-35" id="eFx-cj-dyi"/>
+                                                <constraint firstItem="jYq-nr-7ay" firstAttribute="top" secondItem="QxH-4j-SRl" secondAttribute="topMargin" id="hGi-RX-SCp"/>
+                                                <constraint firstItem="jYq-nr-7ay" firstAttribute="leading" secondItem="QxH-4j-SRl" secondAttribute="leadingMargin" id="x7N-Uk-VTt"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="cellContentView" destination="jYq-nr-7ay" id="c87-RB-hBO"/>
+                                        </connections>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AdvertisementCell" id="OkG-h3-rEk">
+                                        <rect key="frame" x="0.0" y="237" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="OkG-h3-rEk" id="WKD-LM-Qw6">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <color key="backgroundColor" red="0.98468434810000005" green="0.16237841" blue="0.21918036799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="phu-k8-NTh" id="uZB-f8-ZbX"/>
+                                    <outlet property="delegate" destination="phu-k8-NTh" id="cFo-pf-DSj"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Title" id="r9t-RD-ZSK">
+                        <barButtonItem key="rightBarButtonItem" style="plain" id="KhF-IG-hSH">
+                            <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="IhF-Bc-9AA">
+                                <rect key="frame" x="262" y="7" width="97" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Add Ad to List">
+                                    <color key="titleShadowColor" red="0.98468434810000005" green="0.16237841" blue="0.21918036799999999" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="touched:" destination="phu-k8-NTh" eventType="touchUpInside" id="oY0-Nh-NEa"/>
+                                </connections>
+                            </button>
+                            <color key="tintColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        </barButtonItem>
+                    </navigationItem>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="375" height="667"/>
+                    <connections>
+                        <outlet property="tableView" destination="i7m-zX-ECy" id="Obs-u7-eFR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dwd-PP-Bir" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1391" y="1247"/>
+        </scene>
         <!--View Controller-->
         <scene sceneID="fmj-Jw-aoX">
             <objects>
@@ -147,6 +253,22 @@
                                 <state key="normal" title="Collection View With Constraints"/>
                                 <connections>
                                     <segue destination="Fm9-Hk-7mk" kind="show" identifier="ConstraintViewCell" customClass="ShowCollectionViewStackSegue" customModule="CollectionViewSample1" customModuleProvider="target" id="csC-yQ-bSP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qcJ-Yu-3YK">
+                                <rect key="frame" x="112" y="258" width="150" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Table View with Stack"/>
+                                <connections>
+                                    <segue destination="phu-k8-NTh" kind="show" identifier="StackViewCell" customClass="ShowCollectionViewStackSegue" customModule="CollectionViewSample1" customModuleProvider="target" id="ziW-GI-Oey"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oqV-9A-tjq">
+                                <rect key="frame" x="84" y="339" width="190" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Table View with Constraints"/>
+                                <connections>
+                                    <segue destination="phu-k8-NTh" kind="show" identifier="ConstraintViewCell" customClass="ShowCollectionViewStackSegue" customModule="CollectionViewSample1" customModuleProvider="target" id="7y4-nq-2aa"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -181,5 +303,6 @@
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="UGF-om-D8F"/>
+        <segue reference="ziW-GI-Oey"/>
     </inferredMetricsTieBreakers>
 </document>

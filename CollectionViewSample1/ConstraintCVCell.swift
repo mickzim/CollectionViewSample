@@ -27,3 +27,17 @@ class ConstraintCVCell: UICollectionViewCell {
     
 }
 
+class ConstraintTVCell: UITableViewCell {
+    @IBOutlet var cellContentView: CellConstraintView!
+    
+    var model: Model? {
+        didSet {
+            cellContentView.model = model
+        }
+    }
+
+    override func prepareForReuse() {
+        cellContentView.prepareForReuse()
+    }
+    
+}

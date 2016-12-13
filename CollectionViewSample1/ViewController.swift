@@ -25,11 +25,11 @@ class ViewController: UIViewController {
         if let cell = collectionView.visibleCells.first, let ip = collectionView.indexPath(for: cell) {
             var adModel = Model()
             adModel.isAd = true
-            modelList.insert(adModel, at: ip.row + 1)
-            
-            collectionView.insertItems(at: [IndexPath(row: ip.row + 1, section: ip.section)])
+            self.modelList.insert(adModel, at: ip.row + 1)
+            self.collectionView.insertItems(at: [IndexPath(row: ip.row + 1, section: ip.section)])
         }
     }
+    
 }
 
 extension ViewController: UICollectionViewDataSource {

@@ -31,6 +31,7 @@
 		7074857C1DD65FEB00098321 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7074857B1DD65FEB00098321 /* Model.swift */; };
 		70A4D6DB1DFF047D00E4251E /* AdvertisementCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4D6DA1DFF047D00E4251E /* AdvertisementCell.swift */; };
 		70A4D6DD1DFF0BBD00E4251E /* ShowSegue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4D6DC1DFF0BBD00E4251E /* ShowSegue.swift */; };
+		70A4D6DF1E0004D500E4251E /* TblViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70A4D6DE1E0004D500E4251E /* TblViewController.swift */; };
 		70DB619B1DD8E8B400BC6691 /* ConstraintCVCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB619A1DD8E8B400BC6691 /* ConstraintCVCell.swift */; };
 		70DB619D1DD8E8F000BC6691 /* UIImage-Init.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70DB619C1DD8E8F000BC6691 /* UIImage-Init.swift */; };
 /* End PBXBuildFile section */
@@ -67,6 +68,7 @@
 		7074857B1DD65FEB00098321 /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
 		70A4D6DA1DFF047D00E4251E /* AdvertisementCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AdvertisementCell.swift; sourceTree = "<group>"; };
 		70A4D6DC1DFF0BBD00E4251E /* ShowSegue.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSegue.swift; sourceTree = "<group>"; };
+		70A4D6DE1E0004D500E4251E /* TblViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TblViewController.swift; sourceTree = "<group>"; };
 		70DB619A1DD8E8B400BC6691 /* ConstraintCVCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConstraintCVCell.swift; sourceTree = "<group>"; };
 		70DB619C1DD8E8F000BC6691 /* UIImage-Init.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage-Init.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -112,6 +114,7 @@
 			children = (
 				707485591DD6539300098321 /* AppDelegate.swift */,
 				7074855B1DD6539300098321 /* ViewController.swift */,
+				70A4D6DE1E0004D500E4251E /* TblViewController.swift */,
 				7074857B1DD65FEB00098321 /* Model.swift */,
 				707485791DD65BFE00098321 /* StackCVCell.swift */,
 				70DB619A1DD8E8B400BC6691 /* ConstraintCVCell.swift */,
@@ -253,6 +256,7 @@
 				7074855C1DD6539300098321 /* ViewController.swift in Sources */,
 				703485021DE5BCF000FC5C54 /* CellConstraintView.swift in Sources */,
 				703484FF1DE5BC4A00FC5C54 /* CellStackView.swift in Sources */,
+				70A4D6DF1E0004D500E4251E /* TblViewController.swift in Sources */,
 				7074855A1DD6539300098321 /* AppDelegate.swift in Sources */,
 				70DB619B1DD8E8B400BC6691 /* ConstraintCVCell.swift in Sources */,
 				7074857A1DD65BFE00098321 /* StackCVCell.swift in Sources */,
